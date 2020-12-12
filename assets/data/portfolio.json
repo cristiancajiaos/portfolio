@@ -1,0 +1,291 @@
+[{
+    "id": 1,
+    "title": "Handbrake Bitrate Calculator",
+    "year": 2020,
+    "description": "Aplicación desarrollada en Angular 8, para uso personal. El propósito de esta aplicación es obtener el bitrate en kbps a especificar para crear un video con el programa Handbrake, basado en peso del archivo deseado, duración del video, y bitrate de calidad del audio.",
+    "sampleUrl": "https://cristiancajiaos.github.io/handbrake-calculator/",
+    "imgUrl": "assets/img/projects/handbrakecalculator.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript/Typescript",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Angular",
+        "icon": "fa-angular"
+      },
+      {
+        "name": "SASS (sintaxis SCSS)",
+        "icon": "fa-sass"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Portal Auranet",
+    "year": 2019,
+    "description": "Aplicación de Portal de Proveedores desarrollada en AngularJS, para Auranet. Esta aplicación prove servicios de registro y búsqueda de proveedores, maquinarias y empleos.",
+    "sampleUrl": null,
+    "imgUrl": "assets/img/projects/proveedoresauranet.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap (3 & 4)",
+        "icon": "fa-bootstrap"
+      },
+      {
+        "name": "AngularJS",
+        "icon": "fa-angular"
+      },
+      {
+        "name": "Grunt",
+        "icon": "fa-grunt"
+      },
+      {
+        "name": "SASS (sintaxis SCSS)",
+        "icon": "fa-sass"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Live Profile Enhanced",
+    "year": 2019,
+    "description": "Mini-aplicación desarrollada en AngularJS, en la cual se tiene un formulario. A medida que se llena el formulario, se va llenando una tarjeta de perfil, de modo que se puede ver como cambiar el perfil en vivo. Snippet de Codepen. En inglés.",
+    "sampleUrl": "https://codepen.io/cristiancajiaos/full/wVMNaL",
+    "imgUrl": "assets/img/projects/liveprofileenhanced.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap (3 & 4)",
+        "icon": "fa-bootstrap"
+      },
+      {
+        "name": "AngularJS",
+        "icon": "fa-angular"
+      },
+      {
+        "name": "Grunt",
+        "icon": "fa-grunt"
+      },
+      {
+        "name": "SASS (sintaxis SCSS)",
+        "icon": "fa-sass"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Entrekids",
+    "year": 2018,
+    "description": "Prototipo de aplicación, diseñado para la postulación de trabajo al proyecto Entrekids.",
+    "sampleUrl": "https://cristiancajiaos.github.io/ekids",
+    "imgUrl": "assets/img/projects/entrekids.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap 4",
+        "icon": "fa-bootstrap"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Selecciona un color",
+    "year": 2018,
+    "description": "Aplicación en la cual se puede seleccionar un color, mediante tres métodos distintos: Por código hexadecimal, por los valores individuales de los colores rojo, verde y azul; y por nombre.",
+    "sampleUrl": "https://cristiancajiaos.github.io/scolor",
+    "imgUrl": "assets/img/projects/seleccionacolor.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap 4",
+        "icon": "fa-bootstrap"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "TweenJS Docs Page",
+    "year": 2018,
+    "description": "Página creada para FreeCodeCamp, cuyo propósito es mostrar la documentación técnica de una herramienta, en este caso, TweenJS. Snippet de Codepen. En inglés.",
+    "sampleUrl": "https://codepen.io/CeAlCuadrado/full/BVYjXw/",
+    "imgUrl": "assets/img/projects/tweenjsdocs.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "Codepen",
+        "icon": "fa-codepen"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Seleccionador de Comunas",
+    "year":2018,
+    "description": "Mini-aplicación creada en Vue.js, para hacer selección de región, provincia, y comuna en Chile. Snippet de código en Codepen.",
+    "sampleUrl": "https://codepen.io/CeAlCuadrado/full/zavBpg",
+    "imgUrl": "assets/img/projects/seleccionadorcomunas.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap 4",
+        "icon": "fa-bootstrap"
+      },
+      {
+        "name": "Vue.js",
+        "icon": "fa-vuejs"
+      },
+      {
+        "name": "Codepen",
+        "icon": "fa-codepen"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Cristian Ve Docs",
+    "year": 2018,
+    "description": "Plantilla creada para el blog personal de Tumblr Cristian Ve Docs, blog dedicado a los comentarios de documentales.",
+    "sampleUrl": null,
+    "imgUrl": "assets/img/projects/cristianvedocs.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript (+ jQuery)",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap 4",
+        "icon": "fa-bootstrap"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "SeguroEdificio",
+    "year": "2017",
+    "description": "Página creada para el proyecto SeguroEdificio, con el propósito de cotizar los seguros que se deseen tomar.",
+    "sampleUrl": "https://cristiancajiaos.github.io/sedificio/",
+    "imgUrl":"assets/img/projects/seguroedificio.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript (+ jQuery)",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap 3",
+        "icon": "fa-bootstrap"
+      },
+      {
+        "name": "AngularJS",
+        "icon": "fa-angular"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Maureen Cooper English Center",
+    "year": 2016,
+    "description": "Remodelación completa de la página de Maureen Cooper English Center, institución educativa dedicada a la enseñanza de inglés para niños y adultos.",
+    "sampleUrl": "https://cristiancajiaos.github.io/ecenter/",
+    "imgUrl": "assets/img/projects/englishcenter.png",
+    "tools": [{
+        "name": "HTML5",
+        "icon": "fa-html5"
+      },
+      {
+        "name": "CSS3",
+        "icon": "fa-css3"
+      },
+      {
+        "name": "JavaScript (+ jQuery)",
+        "icon": "fa-js"
+      },
+      {
+        "name": "Bootstrap 3",
+        "icon": "fa-bootstrap"
+      },
+      {
+        "name": "AngularJS",
+        "icon": "fa-angular"
+      }
+    ]
+  }
+]
