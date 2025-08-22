@@ -1,0 +1,71 @@
+.projects {
+  a {
+    color: black;
+    text-decoration: none;
+
+    .bg-project {
+      position: relative;
+      height: 100px;
+      height: 200px;
+      margin-bottom: 1rem;
+      border-radius: 5px;
+
+      .project-description {
+        position: absolute;
+        height: inherit;
+        z-index: 1000;
+        background-color: rgba(0,0,0,0.6);
+        width: 100%;
+        color: white;
+        padding: 1rem;
+        height: 200px;
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        align-items: end;
+        border-radius: 5px;
+
+        .project-text {
+          text-overflow: clip;
+        }
+      }
+
+      .project-panel {
+        position: absolute;
+        height: inherit;
+        z-index:999;
+        width: 100%;
+        color: white;
+        background-image: url('/img/projects/entrekids.png');
+        background-size: cover;
+        display: flex;
+        align-items: end;
+        border-radius: 5px;
+
+        &.project-panel1 {
+          background-image: url('/img/projects/enestoestuve.png');
+        }
+
+        &.project-panel2 {
+          background-image: url('/img/projects/entrekids.png');
+        }
+
+        &.project-panel2 {
+          background-image: url('/img/projects/entrekids.png');
+        }
+
+         &.project-panel3 {
+          background-image: url('/img/projects/cristianvedocs.png');
+        }
+      }
+    }
+
+    &:hover {
+
+      .bg-project {
+        box-shadow: 3px 3px 10px black;
+      }
+    }
+  }
+}
