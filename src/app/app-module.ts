@@ -14,6 +14,7 @@ import { Projects } from './components/views/projects/projects';
 import { Contact } from './components/views/contact/contact';
 import { NotFound } from './components/views/not-found/not-found';
 import { RouterModule } from '@angular/router';
+import { Project } from './components/views/project/project';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RouterModule } from '@angular/router';
     Footer,
     Projects,
     Contact,
-    NotFound
+    NotFound,
+    Project
   ],
   imports: [
     BrowserModule,
