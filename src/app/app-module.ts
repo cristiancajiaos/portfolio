@@ -8,9 +8,12 @@ import { Layout } from './components/layout/layout';
 import { Navbar } from './components/layout/navbar/navbar';
 import { Main } from './components/layout/main/main';
 import { Footer } from './components/layout/footer/footer';
-import { ComingSoon } from './components/views/coming-soon/coming-soon';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { Projects } from './components/views/projects/projects';
+import { Contact } from './components/views/contact/contact';
+import { NotFound } from './components/views/not-found/not-found';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -19,13 +22,16 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     Navbar,
     Main,
     Footer,
-    ComingSoon
+    Projects,
+    Contact,
+    NotFound
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RouterModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

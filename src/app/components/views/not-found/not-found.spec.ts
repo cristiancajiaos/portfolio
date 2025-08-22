@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ComingSoon } from './coming-soon';
+import { NotFound } from './not-found';
 
-describe('ComingSoon', () => {
-  let component: ComingSoon;
-  let fixture: ComponentFixture<ComingSoon>;
+describe('NotFound', () => {
+  let component: NotFound;
+  let fixture: ComponentFixture<NotFound>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ComingSoon]
+      declarations: [NotFound]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ComingSoon);
+    fixture = TestBed.createComponent(NotFound);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
