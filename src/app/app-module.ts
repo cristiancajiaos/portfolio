@@ -4,18 +4,38 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { provideHttpClient, withFetch } from '@angular/common/http';
+import { Layout } from './components/layout/layout';
+import { Navbar } from './components/layout/navbar/navbar';
+import { Main } from './components/layout/main/main';
+import { Footer } from './components/layout/footer/footer';
+import { Projects } from './components/views/projects/projects';
+import { Contact } from './components/views/contact/contact';
+import { NotFound } from './components/views/not-found/not-found';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
-    App
+    App,
+    Layout,
+    Navbar,
+    Main,
+    Footer,
+    Projects,
+    Contact,
+    NotFound
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule,
+    RouterModule
   ],
   providers: [
-    provideBrowserGlobalErrorListeners()
+    provideBrowserGlobalErrorListeners(),
+    provideHttpClient(withFetch())
   ],
   bootstrap: [App]
 })

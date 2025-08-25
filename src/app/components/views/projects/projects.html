@@ -1,0 +1,57 @@
+<section class="projects">
+  <header>
+    <h1 class="mb-4">
+      <fa-icon [icon]="faBriefcase" [fixedWidth]="true"></fa-icon>
+      Proyectos
+    </h1>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <ngb-alert [dismissible]="false">
+          <strong>Aviso</strong>: Esta vista se encuentra en desarrollo. La sección de Contacto sí se encuentra disponible para ver.
+        </ngb-alert>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <p>Haz click en cualquiera de los proyectos que se ven para ver más información sobre él.</p>
+      </div>
+      <div class="col-12 col-lg-8 offset-lg-2">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <a href="#">
+              <div class="bg-project">
+                <div class="project-description">
+                  <span class="project-text">En esto estuve <small>(2020)</small></span>
+                </div>
+                <div class="project-panel" [ngStyle]="{'background-image':'url(img/projects/enestoestuve.png)'}">
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <a href="#">
+              <div class="bg-project">
+                <div class="project-description">
+                  <span class="project-text">Entrekids <small>(2019)</small></span>
+                </div>
+                <div class="project-panel" [ngStyle]="{'background-image':'url(img/projects/entrekids.png)'}"></div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <a href="#">
+              <div class="bg-project">
+                <div class="project-description">
+                  <span class="project-text">Cristian Ve Docs <small>(2017)</small></span>
+                </div>
+                <div class="project-panel" [ngStyle]="{'background-image':'url(img/projects/cristianvedocs.png)'}"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</section>
