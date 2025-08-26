@@ -3,8 +3,8 @@
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
 
-body {
-  font-family: 'Oswald', sans-serif;
+body, .default-font {
+  font-family: 'Oswald', sans-serif !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
