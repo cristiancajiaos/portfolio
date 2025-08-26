@@ -14,6 +14,7 @@ import { Contact } from './components/views/contact/contact';
 import { NotFound } from './components/views/not-found/not-found';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
+import { Project } from './components/views/project/project';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { RouterModule } from '@angular/router';
     Main,
     Footer,
     Projects,
+    Project,
     Contact,
     NotFound
   ],
