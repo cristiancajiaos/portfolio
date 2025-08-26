@@ -1,90 +1,82 @@
 <section class="project">
-  <div class="row">
-    <div class="col-12 col-lg-8 offset-lg-2">
-      <header>
-        <h1 class="mb-4">
-          <fa-icon [icon]="faStarOfLife" [fixedWidth]="true"></fa-icon>
-          Proyecto: ?
-        </h1>
-      </header>
-      <main>
-        <div class="row">
-          <div class="col-12">
-            <ngb-alert [dismissible]="false">
-              <strong>Aviso</strong>: Esta vista se encuentra en desarrollo. La sección de Contacto
-              sí se encuentra disponible para ver.
-            </ngb-alert>
-          </div>
-          <div class="col-12 col-lg-4">
-            <aside class="mb-2">
-              <img
-                src="/img/projects/entrekids.png"
-                class="img-project img-fluid"
-                id="project-img"
-              />
+  <header>
+    <h1 class="mb-4">
+      <fa-icon [icon]="faStarOfLife" [fixedWidth]="true"></fa-icon>
+      Proyecto: ?
+    </h1>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col-12">
+        <ngb-alert [dismissible]="false">
+          <strong>Aviso</strong>: Esta vista se encuentra en desarrollo. La sección de Contacto sí
+          se encuentra disponible para ver.
+        </ngb-alert>
+      </div>
+      <div class="col-12 col-lg-4">
+        <aside class="mb-2">
+          <img src="img/projects/entrekids.png" class="img-project img-fluid" id="project-img" />
 
-              <div class="d-grid mb-2">
-                <button class="btn btn-primary">
-                  <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
-                  Ver imagen en pestaña aparte
-                </button>
-              </div>
-              <div class="d-grid mb-2">
-                <a class="btn btn-success" href="https://cristiancajiaos.github.io" target="_blank">
-                  <fa-icon [icon]="faLink"></fa-icon>
-                  Prueba este proyecto en tu navegador
-                </a>
-              </div>
-            </aside>
+          <div class="d-grid mb-2">
+            <button class="btn btn-primary">
+              <fa-icon [icon]="faArrowUpRightFromSquare"></fa-icon>
+              Ver imagen en pestaña aparte
+            </button>
           </div>
-          <div class="col-12 col-lg-8">
-            <div ngbAccordion [closeOthers]="true">
-              <div ngbAccordionItem [collapsed]="false">
-                <h2 ngbAccordionHeader>
-                  <button ngbAccordionButton>Descripción</button>
-                </h2>
-                <div ngbAccordionCollapse>
-                  <div ngbAccordionBody>
-                    <ng-template>
-                      <p>Aquí va la descripción del proyecto</p>
-                    </ng-template>
-                  </div>
-                </div>
+          <div class="d-grid mb-2">
+            <a class="btn btn-success" href="https://cristiancajiaos.github.io" target="_blank">
+              <fa-icon [icon]="faLink"></fa-icon>
+              Prueba este proyecto en tu navegador
+            </a>
+          </div>
+        </aside>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div ngbAccordion [closeOthers]="true">
+          <div ngbAccordionItem [collapsed]="false">
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton>Descripción</button>
+            </h2>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  <p>Aquí va la descripción del proyecto</p>
+                </ng-template>
               </div>
-              <div ngbAccordionItem>
-                <h2 ngbAccordionHeader>
-                  <button ngbAccordionButton>
-                    <span>Herramientas utilizadas</span>
-                  </button>
-                </h2>
-                <div ngbAccordionCollapse>
-                  <div ngbAccordionBody>
-                    <ng-template>
-                      <ul>
-                        <li>Herramienta 1</li>
-                        <li>Herramienta 2</li>
-                        <li>Herramienta 3</li>
-                      </ul>
-                    </ng-template>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div ngbAccordionItem>
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton>
+                <span>Herramientas utilizadas</span>
+              </button>
+            </h2>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  <ul>
+                    <li>Herramienta 1</li>
+                    <li>Herramienta 2</li>
+                    <li>Herramienta 3</li>
+                  </ul>
+                </ng-template>
               </div>
-              <div ngbAccordionItem>
-                <h2 ngbAccordionHeader>
-                  <button ngbAccordionButton>Otros detalles</button>
-                </h2>
-                <div ngbAccordionCollapse>
-                  <div ngbAccordionBody>
-                    <ng-template>
-                      <p>Aquí van otros detalles sobre el proyecto, de ser necesarios</p>
-                    </ng-template>
-                  </div>
-                </div>
+            </div>
+          </div>
+          <div ngbAccordionItem>
+            <h2 ngbAccordionHeader>
+              <button ngbAccordionButton>Otros detalles</button>
+            </h2>
+            <div ngbAccordionCollapse>
+              <div ngbAccordionBody>
+                <ng-template>
+                  <p>Aquí van otros detalles sobre el proyecto, de ser necesarios</p>
+                </ng-template>
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
     </div>
-  </div>
+  </main>
 </section>
