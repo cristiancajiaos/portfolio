@@ -1,5 +1,4 @@
 import { Component, OnInit, Renderer2 } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import {
   IconDefinition,
@@ -10,6 +9,7 @@ import {
   faBriefcase,
   faB
 } from '@fortawesome/free-solid-svg-icons';
+import { TitleService } from '../../../services/title-service';
 
 @Component({
   selector: 'app-project',
@@ -28,7 +28,7 @@ export class Project implements OnInit {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private title: Title,
+    private title: TitleService,
     private renderer: Renderer2
   ) {}
 
