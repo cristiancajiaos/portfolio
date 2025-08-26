@@ -6,7 +6,9 @@ import {
   faStarOfLife,
   faMagnifyingGlassPlus,
   faLink,
-  faArrowUpRightFromSquare
+  faArrowUpRightFromSquare,
+  faBriefcase,
+  faB
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -22,6 +24,7 @@ export class Project implements OnInit {
   public faMagnifyingGlassPlus: IconDefinition = faMagnifyingGlassPlus;
   public faLink: IconDefinition = faLink;
   public faArrowUpRightFromSquare: IconDefinition = faArrowUpRightFromSquare;
+  public faBriefcase: IconDefinition = faBriefcase
 
   constructor(
     private activatedRoute: ActivatedRoute,
