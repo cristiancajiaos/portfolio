@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faComments, faEnvelope, faGlobe, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { Title } from '@angular/platform-browser';
+import { TitleService } from '../../../services/title-service';
 
 @Component({
   selector: 'app-contact',
@@ -18,7 +18,7 @@ export class Contact implements OnInit {
   public faGlobe: IconDefinition = faGlobe;
 
   constructor(
-    public title: Title
+    public title: TitleService
   ) {}
 
   ngOnInit(): void {
@@ -26,6 +26,6 @@ export class Contact implements OnInit {
   }
 
   private setTitle(): void {
-    this.title.setTitle("Contacto | Portafolio de Cristian Cajiao");
+    this.title.setTitle("Contacto");
   }
 }
