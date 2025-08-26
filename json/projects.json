@@ -1,0 +1,82 @@
+[
+  {
+    "id":1,
+    "title":"Handbrake Bitrate Calculator",
+    "year":2021,
+    "imgUrl":"img/projects/handbrakecalculator.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/handbreak-calculator-bs/",
+    "description":"<p>Aplicación desarrollada en Angular 12, para uso personal.</p><p>Esta aplicación es además un remake de una aplicación creada anteriormente con Angular 8 y Angular Material, que cumple exactamente el mismo propósito.</p><p>El propósito de esta aplicación es obtener el bitrate en kbps a especificar para crear un video con el programa Handbrake, basado en peso del archivo deseado en MB, duración del video en segundos, y bitrate de calidad del audio en kilobytes por segundo.</p><p>La aplicación actual está mejorada de la aplicación original, ya que incluye validación efectiva del formulario, y un menú de ayuda que explica como se hace el cálculo del bitrate.</p>",
+    "tools":["HTML5", "CSS3", "TypeScript", "Angular 12", "SASS con sintaxis SCSS", "Bootstrap 5.1.3", "NG-Bootstrap"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":2,
+    "title":"En esto estuve",
+    "year":2020,
+    "imgUrl":"img/projects/enestoestuve.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/enestoestuveapp/",
+    "description":"<p>Aplicación creada como diseño ideal del blog personal \"En esto estuve\".</p><p>La aplicación sirvió como un diseño para crear una plantilla para Tumblr, que es la plataforma en que estuvo hosteado el blog, pero con algunas modificaciones particulares para que funcionara en esa plataforma.</p>",
+    "tools":["HTML5", "CSS3", "TypeScript", "Angular 10", "SASS con sintaxis SCSS", "Bootstrap 4.5.3", "NG-Bootstrap"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":3,
+    "title":"Portal Auranet",
+    "year":2019,
+    "imgUrl":"img/projects/proveedoresauranet.png",
+    "sampleUrl":"",
+    "description":"<p>Aplicación de Portal de Proveedores desarrollada en AngularJS, para Auranet.</p><p>Esta aplicación prove servicios de registro y búsqueda de proveedores, maquinarias y empleos.</p>",
+    "tools":["HTML5", "CSS3", "JavaScript", "AngularJS", "SASS con sintaxis SCSS", "Bootstrap 3", "Bootstrap 4", "Grunt"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":4,
+    "title":"Entrekids",
+    "year":2018,
+    "imgUrl":"img/projects/entrekids.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/ekids/",
+    "description":"<p>Prototipo de aplicación, diseñado para la postulación de trabajo al proyecto Entrekids.</p>",
+    "tools":["HTML5", "CSS3", "JavaScript", "Bootstrap 4"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":5,
+    "title":"Selecciona un color",
+    "year":2018,
+    "imgUrl":"img/projects/seleccionacolor.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/scolor/",
+    "description":"<p>Aplicación en la cual se puede seleccionar un color, mediante tres métodos distintos: Por código hexadecimal, por los valores individuales de los colores rojo, verde y azul; y por nombre.</p>",
+    "tools":["HTML5", "CSS3", "JavaScript", "Bootstrap 4"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":6,
+    "title":"Cristian Ve Docs",
+    "year":2018,
+    "imgUrl":"img/projects/cristianvedocs.png",
+    "sampleUrl":"",
+    "description":"<p>Plantilla creada para el blog personal de Tumblr Cristian Ve Docs, blog dedicado a los comentarios de documentales.</p>",
+    "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 4"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":7,
+    "title":"SeguroEdificio",
+    "year":2017,
+    "imgUrl":"img/projects/cristianvedocs.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/sedificio/",
+    "description":"<p>Página creada para el proyecto SeguroEdificio.</p><p>Esta página tiene el propósito de cotizar los seguros que se deseen tomar.</p>",
+    "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 3", "AngularJS"],
+    "otherDetails": "<p>Ninguno</p>"
+  },
+  {
+    "id":8,
+    "title":"Maureen Cooper English Center",
+    "year":2016,
+    "imgUrl":"img/projects/englishcenter.png",
+    "sampleUrl":"https://cristiancajiaos.github.io/ecenter/",
+    "description":"<p>Remodelación completa de la página de Maureen Cooper English Center, institución educativa dedicada a la enseñanza de inglés para niños y adultos.</p>",
+    "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 3", "AngularJS"],
+    "otherDetails": "<p>Ninguno</p>"
+  }
+]
