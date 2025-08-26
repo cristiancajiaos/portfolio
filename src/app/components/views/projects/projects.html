@@ -17,45 +17,36 @@
     </div>
     <div class="col-12">
       <div class="row">
-        <div class="col-12 col-lg-6">
-          <a href="#" ngbTooltip="En esto estuve (2020)" routerLink="/project/1">
-            <div class="bg-project">
-              <div class="project-description">
-                <span class="project-text">En esto estuve <small>(2020)</small></span>
-              </div>
-              <div
-                class="project-panel"
-                [ngStyle]="{ 'background-image': 'url(img/projects/enestoestuve.png)' }"
-              ></div>
+        <ng-container *ngIf="!loadingProjects">
+          <ng-container *ngIf="projects.length > 0">
+            <div class="col-12 col-lg-6" *ngFor="let project of projects">
+              <a [ngbTooltip]="projectTT" [routerLink]="['/project', project.id]">
+                <div class="bg-project">
+                  <div class="project-description">
+                    <span class="project-text">{{project.title}} <small>({{project.year}})</small></span>
+                  </div>
+                  <div
+                    class="project-panel"
+                    [ngStyle]="{ 'background-image': 'url(' +  project.imgUrl + ')' }">
+                  </div>
+                </div>
+              </a>
+              <ng-template #projectTT>
+                <strong>{{project.title}}</strong> ({{project.year}})
+              </ng-template>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-lg-6">
-          <a href="#" ngbTooltip="Entrekids (2019)" routerLink="/project/2">
-            <div class="bg-project">
-              <div class="project-description">
-                <span class="project-text">Entrekids <small>(2019)</small></span>
-              </div>
-              <div
-                class="project-panel"
-                [ngStyle]="{ 'background-image': 'url(img/projects/entrekids.png)' }"
-              ></div>
+          </ng-container>
+          <ng-container *ngIf="projects.length == 0">
+            <div class="col-12">
+              <p>No se encontraron proyectos.</p>
             </div>
-          </a>
-        </div>
-        <div class="col-12 col-lg-6">
-          <a href="#" ngbTooltip="Cristian ve Docs (2017)" routerLink="/project/3">
-            <div class="bg-project">
-              <div class="project-description">
-                <span class="project-text">Cristian Ve Docs <small>(2017)</small></span>
-              </div>
-              <div
-                class="project-panel"
-                [ngStyle]="{ 'background-image': 'url(img/projects/cristianvedocs.png)' }"
-              ></div>
-            </div>
-          </a>
-        </div>
+          </ng-container>
+        </ng-container>
+        <ng-container *ngIf="loadingProjects">
+          <div class="col-12">
+            <app-loading></app-loading>
+          </div>
+        </ng-container>
       </div>
     </div>
   </main>

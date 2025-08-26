@@ -15,6 +15,7 @@ import { NotFound } from './components/views/not-found/not-found';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { Project } from './components/views/project/project';
+import { SharedModule } from './components/shared/shared-module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { Project } from './components/views/project/project';
     AppRoutingModule,
     NgbModule,
     FontAwesomeModule,
-    RouterModule
+    RouterModule,
+    SharedModule
   ],
   providers: [
     provideBrowserGlobalErrorListeners(),

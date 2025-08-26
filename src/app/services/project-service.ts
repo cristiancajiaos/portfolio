@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Project } from '../components/views/project/project';
 import { HttpClient } from '@angular/common/http';
 import { lastValueFrom } from 'rxjs';
+import { Project } from '../classes/project';
 
 @Injectable({
   providedIn: 'root'

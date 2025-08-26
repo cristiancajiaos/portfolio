@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { faBriefcase, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { IconDefinition, faBriefcase, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { TitleService } from '../../../services/title-service';
 import { Subscription } from 'rxjs';
 import { ProjectService } from '../../../services/project-service';
+import { Project } from '../../../classes/project';
 
 @Component({
   selector: 'app-projects',
@@ -13,8 +14,11 @@ import { ProjectService } from '../../../services/project-service';
 export class Projects implements OnInit {
 
   public faBriefcase: IconDefinition = faBriefcase;
+  public faSpinner: IconDefinition = faSpinner;
 
-  public getProjectsSubscription?: Subscription;
+  public projects: Project[] = [];
+
+  public loadingProjects: boolean = false;
 
   constructor(
     private title: TitleService,
@@ -33,11 +37,15 @@ export class Projects implements OnInit {
   }
 
   private getProjects(): void {
+    this.loadingProjects = true;
     this.projectService.getProjects()
     .then((projects) => {
-      console.log(projects)})
-    .catch((error) => {
-      console.log(error)
+      this.projects = projects;
+      console.log(projects);
+    }).catch((error) => {
+      console.log(error);
+    }).finally(() => {
+      this.loadingProjects = false;
     });
   }
 
