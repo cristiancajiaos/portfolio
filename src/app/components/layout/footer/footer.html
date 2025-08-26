@@ -1,4 +1,10 @@
 <div class="container-fluid">
-  &#169; Cristian Cajiao Skarnic, 2025
+  &#169; Cristian Cajiao Skarnic,
+  <span>
+    <ng-container *ngTemplateOutlet="creationCurrentYearsAreEqual() ? date : rangeDates">
+    </ng-container>
+  </span>
 </div>
 
+<ng-template #date>{{ currentYear }}</ng-template>
+<ng-template #rangeDates>{{ creationYear }} - {{ currentYear }}</ng-template>
