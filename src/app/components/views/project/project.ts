@@ -2,9 +2,10 @@ import { Component, OnInit, Renderer2 } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import {
-  faStarOfLife,
   IconDefinition,
+  faStarOfLife,
   faMagnifyingGlassPlus,
+  faLink,
   faArrowUpRightFromSquare
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -19,7 +20,8 @@ export class Project implements OnInit {
 
   public faStarOfLife: IconDefinition = faStarOfLife;
   public faMagnifyingGlassPlus: IconDefinition = faMagnifyingGlassPlus;
-  public faArrowUpRightFromSquare: IconDefinition = faArrowUpRightFromSquare
+  public faLink: IconDefinition = faLink;
+  public faArrowUpRightFromSquare: IconDefinition = faArrowUpRightFromSquare;
 
   constructor(
     private activatedRoute: ActivatedRoute,
