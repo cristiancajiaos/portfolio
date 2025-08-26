@@ -19,6 +19,6 @@ export class App implements OnInit {
   }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    
   }
 }
