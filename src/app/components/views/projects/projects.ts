@@ -22,7 +22,7 @@ export class Projects implements OnInit {
     this.setTitle();
   }
 
-  public setTitle(): void {
+  private setTitle(): void {
     this.title.setTitle("Proyectos | Portafolio de Cristian Cajiao");
   }
 
