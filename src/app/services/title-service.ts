@@ -10,6 +10,6 @@ export class TitleService {
   ) {}
 
   public setTitle(title: String): void {
-    this.title.setTitle(`${title} | Potafolio de Cristian Cajiao Skarnic`)
+    this.title.setTitle(`${title} | Portafolio de Cristian Cajiao Skarnic`)
   }
 }

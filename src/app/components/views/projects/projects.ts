@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { faBriefcase, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { TitleService } from '../../../services/title-service';
 
 @Component({
   selector: 'app-projects',
@@ -13,7 +13,7 @@ export class Projects implements OnInit {
   public faBriefcase: IconDefinition = faBriefcase;
 
   constructor(
-    private title: Title
+    private title: TitleService
   ) {
 
   }
@@ -22,8 +22,7 @@ export class Projects implements OnInit {
     this.setTitle();
   }
 
-  private setTitle(): void {
-    this.title.setTitle("Proyectos | Portafolio de Cristian Cajiao");
+  public setTitle(): void {
+    this.title.setTitle("Proyectos");
   }
-
 }
