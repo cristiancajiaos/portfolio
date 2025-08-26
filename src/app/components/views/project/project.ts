@@ -5,6 +5,7 @@ import {
   faStarOfLife,
   IconDefinition,
   faMagnifyingGlassPlus,
+  faArrowUpRightFromSquare
 } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -18,6 +19,7 @@ export class Project implements OnInit {
 
   public faStarOfLife: IconDefinition = faStarOfLife;
   public faMagnifyingGlassPlus: IconDefinition = faMagnifyingGlassPlus;
+  public faArrowUpRightFromSquare: IconDefinition = faArrowUpRightFromSquare
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -35,6 +37,6 @@ export class Project implements OnInit {
   }
 
   private setTitle(): void {
-    this.title.setTitle('Proyecto');
+    this.title.setTitle(`Proyecto con ID ${this.currentId}`);
   }
 }
