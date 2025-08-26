@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { faBriefcase, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
@@ -9,9 +10,20 @@ import { faBriefcase, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 })
 export class Projects implements OnInit {
 
-  public faBriefcase: IconDefinition = faBriefcase
+  public faBriefcase: IconDefinition = faBriefcase;
+
+  constructor(
+    private title: Title
+  ) {
+
+  }
 
   ngOnInit(): void {
+    this.setTitle();
+  }
+
+  public setTitle(): void {
+    this.title.setTitle("Proyectos | Portafolio de Cristian Cajiao");
   }
 
 }
