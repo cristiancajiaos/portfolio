@@ -1,9 +1,11 @@
 <div class="container-fluid">
-  &#169; Cristian Cajiao Skarnic,
-  <span>
-    <ng-container *ngTemplateOutlet="creationCurrentYearsAreEqual() ? date : rangeDates">
-    </ng-container>
-  </span>
+  <p>
+    &#169; Cristian Cajiao Skarnic,
+    <span>
+      <ng-container *ngTemplateOutlet="creationCurrentYearsAreEqual() ? date : rangeDates">
+      </ng-container>
+    </span>
+  </p>
 </div>
 
 <ng-template #date>{{ currentYear }}</ng-template>
