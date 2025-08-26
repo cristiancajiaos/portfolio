@@ -7,15 +7,6 @@
   </header>
   <main>
     <div class="col-12">
-      <ngb-alert [dismissible]="false">
-        <strong>Aviso</strong>: Esta vista se encuentra en desarrollo. La sección de Contacto sí se
-        encuentra disponible para ver.
-      </ngb-alert>
-    </div>
-    <div class="col-12">
-      <p>Haz click en cualquiera de los proyectos que se ven para ver más información sobre él.</p>
-    </div>
-    <div class="col-12">
       <div class="row">
         <ng-container *ngIf="!loadingProjects">
           <ng-container *ngIf="projects.length > 0">
