@@ -1,0 +1,32 @@
+.certificates {
+  .certificate-panel {
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+
+    .certificate-title {
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .certificate-link {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      .certificate-panel {
+        background-color: #333;
+        color: white;
+      }
+    }
+  }
+}

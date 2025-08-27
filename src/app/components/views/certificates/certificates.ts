@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { faCertificate, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faCertificate, faLink, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { TitleService } from '../../../services/title-service';
 
 @Component({
   selector: 'app-certificates',
@@ -9,12 +10,21 @@ import { faCertificate, IconDefinition } from '@fortawesome/free-solid-svg-icons
 })
 export class Certificates implements OnInit {
 
-  faCertificate: IconDefinition = faCertificate;
+  public faCertificate: IconDefinition = faCertificate;
+  public faLink: IconDefinition = faLink;
 
-  constructor() {
+  constructor(
+    public title: TitleService
+  ) {
 
   }
+
   ngOnInit(): void {
+    this.setTitle();
+  }
+
+  public setTitle(): void {
+    this.title.setTitle("Certificados");
 
   }
 
