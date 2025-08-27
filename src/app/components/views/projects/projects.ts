@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IconDefinition, faBriefcase, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { TitleService } from '../../../services/title-service';
-import { Subscription } from 'rxjs';
 import { ProjectService } from '../../../services/project-service';
 import { Project } from '../../../classes/project';
 
@@ -41,7 +40,6 @@ export class Projects implements OnInit {
     this.projectService.getProjects()
     .then((projects) => {
       this.projects = projects;
-      console.log(projects);
     }).catch((error) => {
       console.log(error);
     }).finally(() => {
