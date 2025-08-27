@@ -14,7 +14,7 @@ import { Contact } from './components/views/contact/contact';
 import { NotFound } from './components/views/not-found/not-found';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
-import { Project } from './components/views/project/project';
+import { ProjectComponent } from './components/views/project/project';
 import { SharedModule } from './components/shared/shared-module';
 import { Certificates } from './components/views/certificates/certificates';
 
@@ -26,7 +26,7 @@ import { Certificates } from './components/views/certificates/certificates';
     Main,
     Footer,
     Projects,
-    Project,
+    ProjectComponent,
     Contact,
     NotFound,
     Certificates

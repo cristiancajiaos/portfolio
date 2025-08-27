@@ -7,9 +7,10 @@ import {
   faLink,
   faArrowUpRightFromSquare,
   faBriefcase,
-  faB
 } from '@fortawesome/free-solid-svg-icons';
 import { TitleService } from '../../../services/title-service';
+import { ProjectService } from '../../../services/project-service';
+import { Project } from '../../../classes/project';
 
 @Component({
   selector: 'app-project',
@@ -17,24 +18,29 @@ import { TitleService } from '../../../services/title-service';
   templateUrl: './project.html',
   styleUrl: './project.scss',
 })
-export class Project implements OnInit {
+export class ProjectComponent implements OnInit {
   public currentId: number = 0;
 
   public faStarOfLife: IconDefinition = faStarOfLife;
   public faMagnifyingGlassPlus: IconDefinition = faMagnifyingGlassPlus;
   public faLink: IconDefinition = faLink;
   public faArrowUpRightFromSquare: IconDefinition = faArrowUpRightFromSquare;
-  public faBriefcase: IconDefinition = faBriefcase
+  public faBriefcase: IconDefinition = faBriefcase;
+
+  public loadingProject: boolean = false;
+
+  public currentProject?: Project;
 
   constructor(
     private activatedRoute: ActivatedRoute,
     private title: TitleService,
-    private renderer: Renderer2
+    private projectService: ProjectService
   ) {}
 
   ngOnInit(): void {
     this.setCurrentId();
     this.setTitle();
+    this.getProject();
   }
 
   private setCurrentId(): void {
@@ -43,5 +49,16 @@ export class Project implements OnInit {
 
   private setTitle(): void {
     this.title.setTitle(`Proyecto con ID ${this.currentId}`);
+  }
+
+  private getProject(): void {
+    this.loadingProject = true;
+    this.projectService.getProject(this.currentId).then(project => {
+      this.currentProject = project;
+    }).catch(error => {
+
+    }).finally(() => {
+      this.loadingProject = false;
+    });
   }
 }
