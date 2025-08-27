@@ -63,7 +63,7 @@
     "id":7,
     "title":"SeguroEdificio",
     "year":2017,
-    "imgUrl":"img/projects/cristianvedocs.png",
+    "imgUrl":"img/projects/seguroedificio.png",
     "sampleUrl":"https://cristiancajiaos.github.io/sedificio/",
     "description":"<p>Página creada para el proyecto SeguroEdificio.</p><p>Esta página tiene el propósito de cotizar los seguros que se deseen tomar.</p>",
     "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 3", "AngularJS"],
