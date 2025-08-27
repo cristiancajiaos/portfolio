@@ -6,38 +6,42 @@
     </h1>
   </header>
   <main>
-    <div class="col-12">
-      <div class="row">
-        <ng-container *ngIf="!loadingProjects">
-          <ng-container *ngIf="projects.length > 0">
-            <div class="col-12 col-lg-6" *ngFor="let project of projects">
-              <a [ngbTooltip]="projectTT" [routerLink]="['/project', project.id]">
-                <div class="bg-project">
-                  <div class="project-description">
-                    <span class="project-text">{{project.title}} <small>({{project.year}})</small></span>
+    <div class="row">
+      <div class="col-12">
+        <div class="row">
+          <ng-container *ngIf="!loadingProjects">
+            <ng-container *ngIf="projects.length > 0">
+              <div class="col-12 col-lg-6" *ngFor="let project of projects">
+                <a [ngbTooltip]="projectTT" [routerLink]="['/project', project.id]">
+                  <div class="bg-project">
+                    <div class="project-description">
+                      <span class="project-text"
+                        >{{ project.title }} <small>({{ project.year }})</small></span
+                      >
+                    </div>
+                    <div
+                      class="project-panel"
+                      [ngStyle]="{ 'background-image': 'url(' + project.imgUrl + ')' }"
+                    ></div>
                   </div>
-                  <div
-                    class="project-panel"
-                    [ngStyle]="{ 'background-image': 'url(' +  project.imgUrl + ')' }">
-                  </div>
-                </div>
-              </a>
-              <ng-template #projectTT>
-                <strong>{{project.title}}</strong> ({{project.year}})
-              </ng-template>
-            </div>
+                </a>
+                <ng-template #projectTT>
+                  <strong>{{ project.title }}</strong> ({{ project.year }})
+                </ng-template>
+              </div>
+            </ng-container>
+            <ng-container *ngIf="projects.length == 0">
+              <div class="col-12">
+                <p>No se encontraron proyectos.</p>
+              </div>
+            </ng-container>
           </ng-container>
-          <ng-container *ngIf="projects.length == 0">
+          <ng-container *ngIf="loadingProjects">
             <div class="col-12">
-              <p>No se encontraron proyectos.</p>
+              <app-loading></app-loading>
             </div>
           </ng-container>
-        </ng-container>
-        <ng-container *ngIf="loadingProjects">
-          <div class="col-12">
-            <app-loading></app-loading>
-          </div>
-        </ng-container>
+        </div>
       </div>
     </div>
   </main>
