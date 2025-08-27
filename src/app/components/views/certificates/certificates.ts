@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { faCertificate, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-certificates',
@@ -6,6 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './certificates.html',
   styleUrl: './certificates.scss'
 })
-export class Certificates {
+export class Certificates implements OnInit {
+
+  faCertificate: IconDefinition = faCertificate;
+
+  constructor() {
+
+  }
+  ngOnInit(): void {
+
+  }
 
 }
