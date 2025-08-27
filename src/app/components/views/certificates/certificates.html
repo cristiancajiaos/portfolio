@@ -8,56 +8,31 @@
   <main>
     <div class="row">
       <div class="col-12">
-        <a href="https://app.edutin.com/verify/14875540"
-           target="_blank"
-           ngbTooltip="Haz click para abrir el link en donde se encuentra la verificación de este certificado">
-          <div class="certificate-panel">
-            <div class="certificate-title">
-              Curso de Java desde cero a experto
-            </div>
-            <div class="certificate-place-date">
-              Edutin Academy, agosto 2025
-            </div>
-            <div class="certificate-link">
-              <fa-icon [icon]="faLink"></fa-icon>
-              Verificable en <strong>https://app.edutin.com/verify/14875540</strong>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.freecodecamp.org/certification/cristiancajiaos/responsive-web-design"
-           target="_blank"
-           ngbTooltip="Haz click para abrir el link en donde se encuentra la verificación de este certificado">
-          <div class="certificate-panel">
-            <div class="certificate-title">
-              JavaScript Algorithms and Data Structures Certification
-            </div>
-            <div class="certificate-place-date">
-              FreeCodeCamp, julio 2018
-            </div>
-            <div class="certificate-link">
-              <fa-icon [icon]="faLink"></fa-icon>
-              Verificable en <strong>https://www.freecodecamp.org/certification/cristiancajiaos/javascript-algorithms-and-data-structures</strong>
-            </div>
-          </div>
-        </a>
-        <a href="https://www.freecodecamp.org/certification/cristiancajiaos/javascript-algorithms-and-data-structures"
-           target="_blank"
-           ngbTooltip="Haz click para abrir el link en donde se encuentra la verificación de este certificado">
-          <div class="certificate-panel">
-            <div class="certificate-title">
-              Responsive Web Design Certification
-            </div>
-            <div class="certificate-place-date">
-              FreeCodeCamp, junio 2018
-            </div>
-            <div class="certificate-link">
-              <fa-icon [icon]="faLink"></fa-icon>
-              Verificable en <strong>https://www.freecodecamp.org/certification/cristiancajiaos/responsive-web-design</strong>
-            </div>
-          </div>
-        </a>
+        <ng-container *ngIf="!loadingCertificates">
+          <ng-container *ngIf="certificates.length > 0">
+            <a *ngFor="let certificate of certificates"
+              [href]="certificate.certificateUrl"
+              target="_blank"
+              ngbTooltip="Haz click para abrir el link en donde se encuentra la verificación de este certificado"
+            >
+              <div class="certificate-panel">
+                <div class="certificate-title">{{certificate.title}}</div>
+                <div class="certificate-place-date">{{certificate.place}}, {{certificate.date}}</div>
+                <div class="certificate-link">
+                  <fa-icon [icon]="faLink"></fa-icon>
+                  Verificable en <strong>{{certificate.certificateUrl}}</strong>
+                </div>
+              </div>
+            </a>
+          </ng-container>
+          <ng-container *ngIf="certificates.length == 0">
+            <p>No se encontraron certificados</p>
+          </ng-container>
+        </ng-container>
+        <ng-container *ngIf="loadingCertificates">
+          <app-loading></app-loading>
+        </ng-container>
       </div>
     </div>
   </main>
 </section>
-

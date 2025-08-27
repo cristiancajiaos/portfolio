@@ -1,0 +1,23 @@
+[
+  {
+    "id":1,
+    "title":"Curso de Java desde cero a experto",
+    "place": "Edutin Academy",
+    "date":"agosto 2025",
+    "certificateUrl":"https://app.edutin.com/verify/14875540"
+  },
+  {
+    "id":2,
+    "title":"JavaScript Algorithms and Data Structures Certification",
+    "place": "FreeCodeCamp",
+    "date":"julio 2018",
+    "certificateUrl":"https://www.freecodecamp.org/certification/cristiancajiaos/javascript-algorithms-and-data-structures"
+  },
+  {
+    "id":3,
+    "title":"Responsive Web Design Certification",
+    "place": "FreeCodeCamp",
+    "date":"junio 2018",
+    "certificateUrl":"https://www.freecodecamp.org/certification/cristiancajiaos/responsive-web-design"
+  }
+]
