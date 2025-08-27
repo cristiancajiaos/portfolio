@@ -1,6 +1,6 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { NavigationStart, Router } from '@angular/router';
-import { faBriefcase, faComments, IconDefinition } from '@fortawesome/free-solid-svg-icons';
+import { faBriefcase, faComments, faCertificate, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { Subscription } from 'rxjs';
 
 @Component({
@@ -12,7 +12,8 @@ import { Subscription } from 'rxjs';
 export class Navbar implements OnInit, OnDestroy {
 
   public faBriefcase: IconDefinition = faBriefcase;
-  public faComments: IconDefinition = faComments
+  public faComments: IconDefinition = faComments;
+  public faCertificate: IconDefinition = faCertificate;
 
   public isCollapsed: boolean = false;
   private routerEventsSubscription?: Subscription;

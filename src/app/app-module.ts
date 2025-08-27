@@ -16,6 +16,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { RouterModule } from '@angular/router';
 import { Project } from './components/views/project/project';
 import { SharedModule } from './components/shared/shared-module';
+import { Certificates } from './components/views/certificates/certificates';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SharedModule } from './components/shared/shared-module';
     Projects,
     Project,
     Contact,
-    NotFound
+    NotFound,
+    Certificates
   ],
   imports: [
     BrowserModule,
