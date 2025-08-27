@@ -39,7 +39,6 @@ export class ProjectComponent implements OnInit {
 
   ngOnInit(): void {
     this.setCurrentId();
-    this.setTitle();
     this.getProject();
   }
 
@@ -48,13 +47,14 @@ export class ProjectComponent implements OnInit {
   }
 
   private setTitle(): void {
-    this.title.setTitle(`Proyecto con ID ${this.currentId}`);
+    this.title.setTitle(this.currentProject?.title);
   }
 
   private getProject(): void {
     this.loadingProject = true;
     this.projectService.getProject(this.currentId).then(project => {
       this.currentProject = project;
+      this.setTitle();
     }).catch(error => {
 
     }).finally(() => {

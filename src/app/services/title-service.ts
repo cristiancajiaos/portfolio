@@ -9,7 +9,7 @@ export class TitleService {
     private title: Title
   ) {}
 
-  public setTitle(title: String): void {
-    this.title.setTitle(`${title} | Portafolio de Cristian Cajiao Skarnic`)
+  public setTitle(title: string | undefined): void {
+    this.title.setTitle(title ? `${title} | Portafolio de Cristian Cajiao Skarnic` : "Portafolio de Cristian Cajiao Skarnic")
   }
 }
