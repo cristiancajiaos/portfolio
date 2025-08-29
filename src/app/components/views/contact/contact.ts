@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faComments, faEnvelope, faGlobe, IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { TitleService } from '../../../services/title-service';
 
 @Component({
@@ -15,6 +15,7 @@ export class Contact implements OnInit {
 
   public faEnvelope: IconDefinition = faEnvelope;
   public faLinkedin: IconDefinition = faLinkedin;
+  public faGithub: IconDefinition = faGithub;
   public faGlobe: IconDefinition = faGlobe;
 
   constructor(
