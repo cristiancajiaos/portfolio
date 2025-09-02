@@ -21,16 +21,6 @@
   },
   {
     "id":3,
-    "title":"Portal Auranet",
-    "year":2019,
-    "imgUrl":"img/projects/proveedoresauranet.png",
-    "sampleUrl":"",
-    "description":"<p>Aplicación de Portal de Proveedores desarrollada en AngularJS, para Auranet.</p><p>Esta aplicación prove servicios de registro y búsqueda de proveedores, maquinarias y empleos.</p>",
-    "tools":["HTML5", "CSS3", "JavaScript", "AngularJS", "SASS con sintaxis SCSS", "Bootstrap 3", "Bootstrap 4", "Grunt"],
-    "otherDetails": "<p>Ninguno</p>"
-  },
-  {
-    "id":4,
     "title":"Entrekids",
     "year":2018,
     "imgUrl":"img/projects/entrekids.png",
@@ -40,7 +30,7 @@
     "otherDetails": "<p>Ninguno</p>"
   },
   {
-    "id":5,
+    "id":4,
     "title":"Selecciona un color",
     "year":2018,
     "imgUrl":"img/projects/seleccionacolor.png",
@@ -50,33 +40,13 @@
     "otherDetails": "<p>Ninguno</p>"
   },
   {
-    "id":6,
+    "id":5,
     "title":"Cristian Ve Docs",
     "year":2018,
     "imgUrl":"img/projects/cristianvedocs.png",
     "sampleUrl":"",
     "description":"<p>Plantilla creada para el blog personal de Tumblr Cristian Ve Docs, blog dedicado a los comentarios de documentales.</p>",
     "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 4"],
-    "otherDetails": "<p>Ninguno</p>"
-  },
-  {
-    "id":7,
-    "title":"SeguroEdificio",
-    "year":2017,
-    "imgUrl":"img/projects/seguroedificio.png",
-    "sampleUrl":"https://cristiancajiaos.github.io/sedificio/",
-    "description":"<p>Página creada para el proyecto SeguroEdificio.</p><p>Esta página tiene el propósito de cotizar los seguros que se deseen tomar.</p>",
-    "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 3", "AngularJS"],
-    "otherDetails": "<p>Ninguno</p>"
-  },
-  {
-    "id":8,
-    "title":"Maureen Cooper English Center",
-    "year":2016,
-    "imgUrl":"img/projects/englishcenter.png",
-    "sampleUrl":"https://cristiancajiaos.github.io/ecenter/",
-    "description":"<p>Remodelación completa de la página de Maureen Cooper English Center, institución educativa dedicada a la enseñanza de inglés para niños y adultos.</p>",
-    "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 3", "AngularJS"],
     "otherDetails": "<p>Ninguno</p>"
   }
 ]
