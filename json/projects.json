@@ -1,12 +1,12 @@
 [
   {
     "id":1,
-    "title":"Handbrake Bitrate Calculator",
+    "title":"HandBrake Bitrate Calculator",
     "year":2021,
     "imgUrl":"img/projects/handbrakecalculator.png",
     "sampleUrl":"https://cristiancajiaos.github.io/handbreak-calculator-bs/",
-    "description":"<p>Aplicación desarrollada en Angular 12, para uso personal.</p><p>Esta aplicación es además un remake de una aplicación creada anteriormente con Angular 8 y Angular Material, que cumple exactamente el mismo propósito.</p><p>El propósito de esta aplicación es obtener el bitrate en kbps a especificar para crear un video con el programa Handbrake, basado en peso del archivo deseado en MB, duración del video en segundos, y bitrate de calidad del audio en kilobytes por segundo.</p><p>La aplicación actual está mejorada de la aplicación original, ya que incluye validación efectiva del formulario, y un menú de ayuda que explica como se hace el cálculo del bitrate.</p>",
-    "tools":["HTML5", "CSS3", "TypeScript", "Angular 12", "SASS con sintaxis SCSS", "Bootstrap 5.1.3", "NG-Bootstrap"],
+    "description":"<p>Aplicación desarrollada en Angular 12, para uso personal.</p><p>Esta aplicación es además un remake de una aplicación creada anteriormente con Angular 8 y Angular Material, que cumple exactamente el mismo propósito.</p><p>El propósito de esta aplicación es obtener el bitrate en kbps a especificar para crear un video con el programa HandBrake, basado en peso del archivo deseado en MB, duración del video en segundos, y bitrate de calidad del audio en kilobytes por segundo.</p><p>La aplicación actual está mejorada de la aplicación original, ya que incluye validación efectiva del formulario, y un menú de ayuda que explica como se hace el cálculo del bitrate.</p>",
+    "tools":["HTML5", "CSS3", "TypeScript", "Angular 12-13 (creada con v12 y actualizada a v13)", "SASS con sintaxis SCSS", "Bootstrap 5.1.3", "NG-Bootstrap"],
     "otherDetails": "<p>Ninguno</p>"
   },
   {
