@@ -6,7 +6,7 @@
     "imgUrl":"img/projects/findamovie.png",
     "sampleUrl":"https://cristiancajiaos.github.io/find-a-movie/",
     "description":"<p>Aplicación desarrollada en Angular 20 exclusivamente para este portafolio.</p><p>Esta aplicación permite consultar información básica sobre películas, además de consultar la filmografía de las personas que participan delante y detrás de cámaras.</p><p>La aplicación se compone principalmente de dos buscadores, uno para películas, y otro para personas. Ambos tienen dos formas de visualizar los resultados, por grilla y por lista.</p><p>Al buscar una película se puede consultar su información básica, ver un tráiler, ver su reparto completo, y ver su equipo técnico principal o completo. Al buscar una persona se puede ver su biografía, su información básica, y su filmografía como reparto y como equipo técnico.</p><p>Usa la API de The Movie Database (TMDB). Solo en inglés.</p>",
-    "tools":["HTML5", "CSS3", "TypeScript", "Angular 20", "SASS con sintaxis SCSS", "Bootstrap 5", "NG-Bootstrap", "Font Awesome 7", "API de The Movie Database (TMDB)", "Photoshop"],
+    "tools":["HTML5", "CSS3", "TypeScript", "Angular 20", "SASS con sintaxis SCSS", "Bootstrap 5", "NG-Bootstrap", "NG-Select", "Font Awesome 7", "API de The Movie Database (TMDB)", "Photoshop"],
     "otherDetails": "<p>Ninguno</p>"
   },
   {
@@ -37,26 +37,6 @@
     "sampleUrl":"https://cristiancajiaos.github.io/ekids/",
     "description":"<p>Prototipo de aplicación, diseñado para la postulación de trabajo al proyecto Entrekids.</p>",
     "tools":["HTML5", "CSS3", "JavaScript", "Bootstrap 4"],
-    "otherDetails": "<p>Ninguno</p>"
-  },
-  {
-    "id":5,
-    "title":"Selecciona un color",
-    "year":2018,
-    "imgUrl":"img/projects/seleccionacolor.png",
-    "sampleUrl":"https://cristiancajiaos.github.io/scolor/",
-    "description":"<p>Aplicación en la cual se puede seleccionar un color, mediante tres métodos distintos: Por código hexadecimal, por los valores individuales de los colores rojo, verde y azul; y por nombre.</p>",
-    "tools":["HTML5", "CSS3", "JavaScript", "Bootstrap 4"],
-    "otherDetails": "<p>Ninguno</p>"
-  },
-  {
-    "id":6,
-    "title":"Cristian Ve Docs",
-    "year":2018,
-    "imgUrl":"img/projects/cristianvedocs.png",
-    "sampleUrl":"",
-    "description":"<p>Plantilla creada para el blog personal de Tumblr Cristian Ve Docs, blog dedicado a los comentarios de documentales.</p>",
-    "tools":["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap 4"],
     "otherDetails": "<p>Ninguno</p>"
   }
 ]
