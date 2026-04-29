@@ -7,6 +7,8 @@ import {
   faLink,
   faArrowUpRightFromSquare,
   faBriefcase,
+  faWrench,
+  faGripLines,
 } from '@fortawesome/free-solid-svg-icons';
 import { TitleService } from '../../../services/title-service';
 import { ProjectService } from '../../../services/project-service';
@@ -26,6 +28,8 @@ export class ProjectComponent implements OnInit {
   public faLink: IconDefinition = faLink;
   public faArrowUpRightFromSquare: IconDefinition = faArrowUpRightFromSquare;
   public faBriefcase: IconDefinition = faBriefcase;
+  public faWrench: IconDefinition = faWrench;
+  public faGripLines: IconDefinition = faGripLines;
 
   public loadingProject: boolean = false;
 

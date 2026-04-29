@@ -42,6 +42,7 @@
             <div ngbAccordionItem [collapsed]="false">
               <h2 ngbAccordionHeader>
                 <button ngbAccordionButton>
+                  <fa-icon [icon]="faGripLines" [fixedWidth]="true"></fa-icon>
                   <strong class="text-uppercase">Descripción</strong>
                 </button>
               </h2>
@@ -54,7 +55,10 @@
             <div ngbAccordionItem>
               <h2 ngbAccordionHeader>
                 <button ngbAccordionButton>
-                  <strong class="text-uppercase">Herramientas utilizadas</strong>
+                  <fa-icon [icon]="faWrench" [fixedWidth]="true"/>
+                  <strong class="text-uppercase">
+                    Stack técnico
+                  </strong>
                 </button>
               </h2>
               <div ngbAccordionCollapse>
