@@ -6,7 +6,7 @@
     "imgUrl":"img/projects/findamovie.png",
     "sampleUrl":"https://cristiancajiaos.github.io/find-a-movie/",
     "description":"<p>Esta aplicación, creada con Angular 20, permite consultar información básica sobre películas, además de consultar la filmografía de las personas que participan delante y detrás de cámaras.</p><p>La aplicación se compone principalmente de dos buscadores, uno para películas, y otro para personas. Ambos tienen dos formas de visualizar los resultados, por grilla y por lista.</p><p>Al buscar una película se puede consultar su información básica, ver un tráiler, ver su reparto completo, y ver su equipo técnico principal o completo. Al buscar una persona se puede ver su biografía, su información básica, y consultar y ordenar su filmografía tanto como reparto y como equipo técnico.</p><p>Usa la API de The Movie Database (TMDB). Solo en inglés.</p>",
-    "tools":["Angular 20", "TypeScript", "RxJS", "NgRx", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 5", "NG-Bootstrap", "NG-Select", "Font Awesome 7", "API de The Movie Database (TMDB)"],
+    "tools":["Angular 20", "TypeScript", "RxJS", "HTML5", "CSS3", "SASS/SCSS", "Bootstrap 5", "NG-Bootstrap", "NG-Select", "Font Awesome 7", "API de The Movie Database (TMDB)"],
     "otherDetails": "<p>Ninguno</p>"
   },
   {
