@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { IconDefinition, faBriefcase, faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { TitleService } from '../../../services/title-service';
 import { ProjectService } from '../../../services/project-service';
@@ -8,6 +8,7 @@ import { Project } from '../../../classes/project';
   selector: 'app-projects',
   standalone: false,
   templateUrl: './projects.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './projects.scss'
 })
 export class Projects implements OnInit {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { faCertificate, faLink, IconDefinition } from '@fortawesome/free-solid-svg-icons';
 import { TitleService } from '../../../services/title-service';
 import { CertificateService } from '../../../services/certificate-service';
@@ -8,6 +8,7 @@ import { Certificate } from '../../../classes/certificate';
   selector: 'app-certificates',
   standalone: false,
   templateUrl: './certificates.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './certificates.scss'
 })
 export class Certificates implements OnInit {

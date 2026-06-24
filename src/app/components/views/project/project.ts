@@ -1,4 +1,4 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit, Renderer2, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {
   IconDefinition,
@@ -18,6 +18,7 @@ import { Project } from '../../../classes/project';
   selector: 'app-project',
   standalone: false,
   templateUrl: './project.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrl: './project.scss',
 })
 export class ProjectComponent implements OnInit {
