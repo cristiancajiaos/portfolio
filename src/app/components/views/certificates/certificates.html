@@ -8,30 +8,32 @@
   <main>
     <div class="row">
       <div class="col-12">
-        <ng-container *ngIf="!loadingCertificates">
-          <ng-container *ngIf="certificates.length > 0">
-            <a *ngFor="let certificate of certificates"
-              [href]="certificate.certificateUrl"
-              target="_blank"
-              ngbTooltip="Haz click para abrir el link en donde se encuentra la verificación de este certificado"
-            >
-              <div class="certificate-panel">
-                <div class="certificate-title">{{certificate.title}}</div>
-                <div class="certificate-place-date">{{certificate.place}}, {{certificate.date}}</div>
-                <div class="certificate-link">
-                  <fa-icon [icon]="faLink"></fa-icon>
-                  Verificable en <strong>{{certificate.certificateUrl}}</strong>
+        @if (!loadingCertificates) {
+          @if (certificates.length > 0) {
+            @for (certificate of certificates; track certificate) {
+              <a
+                [href]="certificate.certificateUrl"
+                target="_blank"
+                ngbTooltip="Haz click para abrir el link en donde se encuentra la verificación de este certificado"
+                >
+                <div class="certificate-panel">
+                  <div class="certificate-title">{{certificate.title}}</div>
+                  <div class="certificate-place-date">{{certificate.place}}, {{certificate.date}}</div>
+                  <div class="certificate-link">
+                    <fa-icon [icon]="faLink"></fa-icon>
+                    Verificable en <strong>{{certificate.certificateUrl}}</strong>
+                  </div>
                 </div>
-              </div>
-            </a>
-          </ng-container>
-          <ng-container *ngIf="certificates.length == 0">
+              </a>
+            }
+          }
+          @if (certificates.length == 0) {
             <p>No se encontraron certificados</p>
-          </ng-container>
-        </ng-container>
-        <ng-container *ngIf="loadingCertificates">
+          }
+        }
+        @if (loadingCertificates) {
           <app-loading></app-loading>
-        </ng-container>
+        }
       </div>
     </div>
   </main>

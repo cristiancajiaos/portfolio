@@ -1,5 +1,5 @@
 <section class="project">
-  <ng-container *ngIf="!loadingProject">
+  @if (!loadingProject) {
     <header>
       <h1 class="mb-4">
         <fa-icon [icon]="faStarOfLife" [fixedWidth]="true"></fa-icon>
@@ -12,80 +12,82 @@
         <div class="col-12 col-lg-4">
           <aside class="mb-2">
             <img [src]="currentProject!.imgUrl"
-                 [alt]="currentProject!.title"
-                 class="img-project img-fluid"
-                 id="project-img" />
-            <div class="d-grid mb-2">
-              <a class="btn btn-primary" [href]="currentProject!.imgUrl" target="_blank">
-                <fa-icon [icon]="faArrowUpRightFromSquare" [fixedWidth]="true"></fa-icon>
-                Ver imagen en pestaña aparte
-              </a>
-            </div>
-            <div class="d-grid mb-2">
-              <ng-container *ngIf="currentProject!.sampleUrl">
-                <a
-                  class="btn btn-success"
-                  [href]="currentProject!.sampleUrl"
-                  target="_blank"
-                  ngbTooltip="Está disponible una demostración de este proyecto. Haz click, y se abrirá en una pestaña aparte."
-                  placement="bottom"
-                >
-                  <fa-icon [icon]="faLink" [fixedWidth]="true"></fa-icon>
-                  Ver Demo de este proyecto
+              [alt]="currentProject!.title"
+              class="img-project img-fluid"
+              id="project-img" />
+              <div class="d-grid mb-2">
+                <a class="btn btn-primary" [href]="currentProject!.imgUrl" target="_blank">
+                  <fa-icon [icon]="faArrowUpRightFromSquare" [fixedWidth]="true"></fa-icon>
+                  Ver imagen en pestaña aparte
                 </a>
-              </ng-container>
-            </div>
-          </aside>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div ngbAccordion [closeOthers]="true">
-            <div ngbAccordionItem [collapsed]="false">
-              <h2 ngbAccordionHeader>
-                <button ngbAccordionButton>
-                  <fa-icon [icon]="faGripLines" [fixedWidth]="true"></fa-icon>
-                  <strong class="text-uppercase">Descripción</strong>
-                </button>
-              </h2>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody>
-                  <div [innerHTML]="currentProject!.description"></div>
+              </div>
+              <div class="d-grid mb-2">
+                @if (currentProject!.sampleUrl) {
+                  <a
+                    class="btn btn-success"
+                    [href]="currentProject!.sampleUrl"
+                    target="_blank"
+                    ngbTooltip="Está disponible una demostración de este proyecto. Haz click, y se abrirá en una pestaña aparte."
+                    placement="bottom"
+                    >
+                    <fa-icon [icon]="faLink" [fixedWidth]="true"></fa-icon>
+                    Ver Demo de este proyecto
+                  </a>
+                }
+              </div>
+            </aside>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div ngbAccordion [closeOthers]="true">
+              <div ngbAccordionItem [collapsed]="false">
+                <h2 ngbAccordionHeader>
+                  <button ngbAccordionButton>
+                    <fa-icon [icon]="faGripLines" [fixedWidth]="true"></fa-icon>
+                    <strong class="text-uppercase">Descripción</strong>
+                  </button>
+                </h2>
+                <div ngbAccordionCollapse>
+                  <div ngbAccordionBody>
+                    <div [innerHTML]="currentProject!.description"></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div ngbAccordionItem>
-              <h2 ngbAccordionHeader>
-                <button ngbAccordionButton>
-                  <fa-icon [icon]="faWrench" [fixedWidth]="true"/>
-                  <strong class="text-uppercase">
-                    Stack técnico
-                  </strong>
-                </button>
-              </h2>
-              <div ngbAccordionCollapse>
-                <div ngbAccordionBody>
-                  <ng-template>
-                    <ul>
-                        <li *ngFor="let tool of currentProject!.tools">
-                          {{tool}}
-                        </li>
+              <div ngbAccordionItem>
+                <h2 ngbAccordionHeader>
+                  <button ngbAccordionButton>
+                    <fa-icon [icon]="faWrench" [fixedWidth]="true"/>
+                    <strong class="text-uppercase">
+                      Stack técnico
+                    </strong>
+                  </button>
+                </h2>
+                <div ngbAccordionCollapse>
+                  <div ngbAccordionBody>
+                    <ng-template>
+                      <ul>
+                        @for (tool of currentProject!.tools; track tool) {
+                          <li>
+                            {{tool}}
+                          </li>
+                        }
                       </ul>
-                  </ng-template>
+                    </ng-template>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="d-grid">
-        <a href="#" class="btn" routerLink="/projects">
-          <fa-icon [icon]="faBriefcase" [fixedWidth]="true"></fa-icon>
-          Ir a vista de Proyectos
-        </a>
-      </div>
-    </main>
-  </ng-container>
-  <ng-container *ngIf="loadingProject">
-    <app-loading></app-loading>
-  </ng-container>
-</section>
+        <hr />
+        <div class="d-grid">
+          <a href="#" class="btn" routerLink="/projects">
+            <fa-icon [icon]="faBriefcase" [fixedWidth]="true"></fa-icon>
+            Ir a vista de Proyectos
+          </a>
+        </div>
+      </main>
+    }
+    @if (loadingProject) {
+      <app-loading></app-loading>
+    }
+  </section>
